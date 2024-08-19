@@ -1,13 +1,5 @@
-@import url('./header.css');
-@import url('./search.css');
-
-.conteiner {
-	width: 100%;
-	max-width: 1280px;
-	padding-left: 40px;
-	padding-right: 40px;
-	margin: 0 auto;
-}
+@import url('header.css');
+@import url('search.css');
 
 .text--black {
 	font-size: 24px;
@@ -29,7 +21,7 @@
 	align-items: flex-start;
 }
 
-.main .conteiner {
+.main .container {
 	display: flex;
 	flex-direction: row;
 }

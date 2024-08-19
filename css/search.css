@@ -1,6 +1,6 @@
-@import url('./general.css');
+@import url('general.css');
 
-.search .conteiner {
+.search .container {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -78,7 +78,7 @@
 	justify-content: center;
 }
 
-.vacancies .conteiner {
+.vacancies .container {
 	padding-top: 28px;
 	display: flex;
 	align-items: center;

@@ -1,4 +1,4 @@
-@import url('./general.css');
+@import url('general.css');
 
 header {
 	box-shadow: var(--box-shadow-1);
@@ -16,9 +16,8 @@ header {
 	gap: 52px;
 }
 
-.link.header__link {
+.header__link {
 	display: flex;
-	justify-content: flex-start;
 }
 
 .navigation {
@@ -28,7 +27,7 @@ header {
 	gap: 36px;
 }
 
-a {
+.link {
 	position: relative;
 	color: var(--black);
 	cursor: pointer;
@@ -36,7 +35,7 @@ a {
 	text-decoration: none;
 }
 
-a:after {
+.link:after {
 	display: block;
 	position: absolute;
 	left: 0;
@@ -47,16 +46,16 @@ a:after {
 	transition: width 0.3s ease-out;
 }
 
-a:hover:after,
-a:focus:after {
+.link:hover:after,
+.link:focus:after {
 	width: 100%;
 }
 
-a {
+.link {
 	color: var(--black);
 	transition: 0.4s;
 }
 
-a:hover {
+.link:hover {
 	color: var(--green-1);
 }
