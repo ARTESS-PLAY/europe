@@ -18,3 +18,13 @@ new Swiper('.swiper-articles', {
     loop: true,
     slidesPerView: 4
 });
+
+new Swiper('.swiper-recommendations', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    simulateTouch: false,
+    loop: true,
+    slidesPerView: 7
+});
