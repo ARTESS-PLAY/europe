@@ -3,10 +3,21 @@ new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
-    simulateTouch: false,
     loop: true,
-    slidesPerView: 8,
+    slidesPerView: 2,
     spaceBetween: -50,
+
+    breakpoints: {
+        499: {
+            slidesPerView: 3,
+        },
+        1000: {
+            slidesPerView: 4,
+        },
+        1200: {
+            slidesPerView: 8,
+        }
+    }
 });
 
 new Swiper('.swiper-articles', {
@@ -14,9 +25,20 @@ new Swiper('.swiper-articles', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
-    simulateTouch: false,
     loop: true,
-    slidesPerView: 4
+    slidesPerView: 1,
+
+    breakpoints: {
+        750: {
+            slidesPerView: 2,
+        },
+        999: {
+            slidesPerView: 3,
+        },
+        1280: {
+            slidesPerView: 4,
+        }
+    }
 });
 
 new Swiper('.swiper-recommendations', {
@@ -24,7 +46,18 @@ new Swiper('.swiper-recommendations', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
-    simulateTouch: false,
     loop: true,
-    slidesPerView: 7
+    slidesPerView: 1,
+
+    breakpoints: {
+        499: {
+            slidesPerView: 2,
+        },
+        999: {
+            slidesPerView: 3,
+        },
+        1280: {
+            slidesPerView: 7,
+        }
+    }
 });

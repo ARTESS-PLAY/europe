@@ -5,3 +5,9 @@
 	padding-right: 40px;
 	margin: 0 auto;
 }
+
+@media (max-width: 1279.89px) {
+    .container {
+        padding: 0 20px;
+    }
+}
