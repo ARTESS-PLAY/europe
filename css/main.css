@@ -1,1 +1,229 @@
 @import url('header.css');
+
+.wrapper {
+    background: url(../img/arc-desktop.webp) no-repeat center;
+    position: relative;
+
+    .wrapper__arrows {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        left: 0;
+        top: 0;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .arrow-1 {
+            position: absolute;
+            height: 239px;
+            width: 133px;
+            top: -90px;
+            left: 100px;
+        }
+
+        .arrow-2 {
+            position: absolute;
+            right: 140px;
+            top: 10px;
+            width: 200px;
+            height: auto;
+        }
+    }
+
+    .wrapper__search {
+        padding: 1.5rem 0;
+        max-width: 64rem;
+        margin: 0 auto;
+        border-bottom: 1px solid var(--dark-blue-2);
+        position: relative;
+
+        .wrapper__search-text {
+            margin: .75rem 0 1rem 0;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: .75rem;
+            text-align: center;
+            color: var(--white);
+
+            .wrapper__search-text-bold {
+                font-weight: 700;
+                font-size: 2.25rem;
+                line-height: 2.5rem;
+            }
+
+            .wrapper__search-text-thin {
+                font-size: 1.875rem;
+                line-height: 2.25rem;
+            }
+        }
+
+        .wrapper__search-box {
+            max-width: 42rem;
+            display: flex;
+            margin: 0 auto;
+            padding: .75rem;
+            gap: .75rem;
+
+            .wrapper__search-bar {
+                padding: 0 1rem;
+                border-radius: .375rem;
+                background-color: var(--white);
+                height: 48px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                .input {
+                    font-size: .875rem;
+                    line-height: 1.25rem;
+                    width: 100%;
+                    height: fit-content;
+                }
+
+                .input::placeholder {
+                    color: var(--input-placeholder);
+                }
+            }
+
+            .wrapper__search-btn {
+                display: flex;
+                gap: .25rem;
+                align-items: center;
+                background-color: var(--dark-green);
+                padding: 0 .75rem;
+                border-radius: .375rem;
+
+                .icon {
+                    height: 18px;
+                    width: 18px;
+                }
+
+                .wrapper__search-btn-text {
+                    color: var(--white);
+                    font-weight: 500;
+                    font-size: 1.125rem;
+                    line-height: 1.75rem;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+    .wrapper__slider {
+        max-width: 64rem;
+        margin: 0 auto;
+        padding: 1.25rem 0;
+        position: relative;
+
+        .wrapper__slider-title {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            font-weight: 600;
+            color: var(--white);
+            padding-left: 3.5rem;
+        }
+
+        .wrapper__slider-carousel {
+            padding: 1rem 0 2rem 0;
+        }
+
+        .swiper {
+            overflow-x: clip;
+            overflow-y: visible;
+
+            .swiper-wrapper .swiper-slide {
+                padding: 0.5rem 0;
+
+                .swiper-slide__link {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1rem;
+
+                    .flag-wrapper-tooltip {
+                        position: relative;
+
+                        .flag-wrapper {
+                            width: 3rem;
+                            height: 3rem;
+                            border-radius: 100%;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+
+                            .flag-wrapper__img {
+                                object-fit: cover;
+                            }
+                        }
+
+                        .flag-wrapper:hover {
+                            box-shadow: var(--box-shadow-3);
+                        }
+
+                        .tooltip {
+                            position: absolute;
+                            visibility: hidden;
+                            bottom: 115%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            background-color: var(--white);
+                            text-wrap: nowrap;
+                            padding: 13px;
+                            border-radius: 5px;
+
+                            .tooltip__text {
+                                display: flex;
+                                color: var(--black);
+                                font-size: 12px;
+                            }
+                        }
+
+                        .tooltip::after {
+                            content: "";
+                            position: absolute;
+                            top: 100%;
+                            left: 50%;
+                            margin-left: -5px;
+                            border-width: 5px;
+                            border-style: solid;
+                            border-color: var(--white) transparent transparent transparent;
+                        }
+
+                        .tooltip:hover {
+                            display: none;
+                            visibility: hidden;
+                        }
+                    }
+
+                    .flag-wrapper-tooltip:hover .tooltip {
+                        visibility: visible;
+                    }
+
+                    .country-name {
+                        color: var(--white);
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .swiper-button-prev {
+                left: 0;
+            }
+
+            .swiper-button-next {
+                right: 0;
+            }
+
+            .swiper-button-prev::after,
+            .swiper-button-next::after {
+                color: var(--white);
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+        }
+    }
+}

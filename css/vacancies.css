@@ -78,12 +78,12 @@
 }
 
 .sum {
-	color: var(--dark-blue);
+	color: var(--dark-blue-1);
 	font-size: 18px;
 }
 
 .term {
-	color: var(--dark-blue);
+	color: var(--dark-blue-1);
 	font-size: 12px;
 }
 

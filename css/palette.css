@@ -5,6 +5,7 @@
     --green-1: #00a650;
     --green-2: #00b559;
     --green-3: #00b300;
+    --dark-green: #006634;
     --grey: #9f9f9f;
     --light-grey-1: #f5f5f5;
     --light-grey-2: #eeeeee;
@@ -12,8 +13,10 @@
     --dark-grey-2: #666666;
     --dark-grey-3: #333333;
     --translucent-grey: rgba(0, 0, 0, 0.3);
-    --dark-blue: #004596;
-
+    --dark-blue-1: #004596;
+    --dark-blue-2: #336aab;
+    --input-placeholder: #8d949c;
     --box-shadow-1: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
     --box-shadow-2: 0 0 10px rgba(0, 0, 0, 0.1);
+    --box-shadow-3: 0 0 10px #fff;
 }
