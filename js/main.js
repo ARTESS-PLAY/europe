@@ -20,6 +20,23 @@ $(document).ready(function () {
     });
 
     /**
+     * Фильтр меню
+     */
+    $('#open_filters_mob').on('click', function () {
+        $('.main__filters').addClass('main__filters--active');
+        noSroll();
+    });
+
+    /**
+     * Фильтр меню закрытие
+     */
+    $('#mob_close_filters').on('click', function () {
+        $('.main__filters').removeClass('main__filters--active');
+        addSroll();
+        return;
+    });
+
+    /**
      * Удаление скролла
      */
     function noSroll() {

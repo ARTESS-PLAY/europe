@@ -19,7 +19,6 @@
 
 .vacancies__content {
     display: grid;
-    flex-direction: row;
     gap: 1.25rem;
     grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -36,7 +35,7 @@
     box-shadow: var(--box-shadow-4);
 }
 
-.filters__block:nth-child(n + 1) {
+.filters__block:nth-of-type(n + 3) {
     border-top: solid 1px var(--light-grey-1);
 }
 
@@ -62,6 +61,26 @@
     font-size: 14px;
 }
 
+.filters__block--submit button {
+    width: 100%;
+    height: 32px;
+    border: none;
+    background-color: var(--dark-blue-1);
+    cursor: pointer;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s background-color;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.filters__block--submit button:hover {
+    background-color: var(--dark-blue-2);
+}
+
 .main__filters {
     height: fit-content;
 }
@@ -79,13 +98,42 @@
 }
 
 .advertisment > a {
-    display: block;
+    display: flex;
     width: 100%;
     height: 100%;
+    flex-direction: row;
+}
+
+.advertisment__image {
+    padding: 20px;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advertisment__image__wrapper {
+    width: 120px;
+    height: 200px;
+    border-radius: 0.2rem;
+    box-shadow: var(--box-shadow-7);
+    overflow: hidden;
+}
+
+.advertisment__image__wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.advertisment__content {
+    padding: 20px;
+    flex-grow: 1;
 }
 
 .advertisment__heard {
-    padding: 12px 24px;
+    padding: 12px 0;
 }
 
 .advertisment__heard h2 {
@@ -109,7 +157,7 @@
 }
 
 .advertisment__location {
-    padding: 16px 24px;
+    padding: 16px 0;
     border-top: solid 1px var(--light-grey-1);
     display: flex;
     flex-direction: row;
@@ -132,6 +180,7 @@
     justify-content: center;
     align-items: center;
     width: 24px;
+    min-width: 24px;
     height: 24px;
     box-shadow: var(--box-shadow-6);
 }
@@ -165,7 +214,7 @@
 }
 
 .advertisment__bottom {
-    padding: 24px;
+    padding-top: 24px;
     padding-bottom: 20px;
     border-top: solid 1px var(--light-grey-1);
 }
@@ -189,5 +238,102 @@
 
     .filters__block__content .checkbox {
         font-size: 12px;
+    }
+}
+
+#open_filters_mob {
+    display: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-image: url('../img/filter.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#mob_close_filters {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/close.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+@media (max-width: 1024px) {
+    .main__filters {
+        position: fixed;
+        width: 100vw;
+        height: calc(101vh);
+        overflow-y: auto;
+        padding-top: 16px;
+        left: 0;
+        top: 0;
+        transform: translateY(-120%);
+        transition: 0.3s transform;
+        z-index: 150;
+    }
+
+    .main__filters--active {
+        transform: translateY(0%);
+    }
+
+    #mob_close_filters {
+        display: block;
+    }
+
+    .vacancies__up {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 12px;
+        padding-top: 12px;
+    }
+
+    .vacancies__text {
+        text-align: right;
+    }
+
+    .vacancies__content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .advertisment__location__county__name {
+        font-size: 14px;
+    }
+
+    .advertinsments__salary__sum {
+        font-size: 16px;
+    }
+
+    #open_filters_mob {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .advertisment > a {
+        flex-direction: column;
+    }
+
+    .advertisment__image {
+        padding: 12px;
+        padding-bottom: 0;
+    }
+
+    .advertisment__content {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 636px) {
+    .advertisment__bottom.vacancy__requirements {
+        display: none;
     }
 }
