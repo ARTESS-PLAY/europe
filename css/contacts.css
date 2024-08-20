@@ -51,38 +51,31 @@ body {
     }
 
     .blue-bg__text {
-        transition-duration: 1s;
-        transition-property: all;
-        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        align-items: baseline;
         justify-content: center;
-        gap: 1.5rem;
         position: absolute;
-        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
         right: 0;
         bottom: 0;
         left: 0;
         margin: 0 auto;
         width: 83.333333%;
-        transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+        height: fit-content;
 
         .blue-bg__contact {
             color: var(--white);
             font-size: 3.75rem;
             line-height: 1;
             font-weight: 600;
-            display: flex;
-            align-items: baseline;
-            gap: 4px;
+        }
 
-            .blue-bg__contact-circle {
-                width: 10px;
-                height: 10px;
-                border-radius: 100%;
-                background-color: var(--green-2);
-            }
+        .blue-bg__contact-circle {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: var(--green-2);
         }
     }
 }
@@ -189,9 +182,11 @@ body {
 
 @media (max-width: 639.89px) {
     .blue-bg {
-        .blue-bg__text .blue-bg__contact {
-            font-size: 2.25rem;
-            line-height: 2.5rem;
+        .blue-bg__text {
+            .blue-bg__contact {
+                font-size: 2.25rem;
+                line-height: 2.5rem;
+            }
 
             .blue-bg__contact-circle {
                 width: 6px;
