@@ -26,6 +26,7 @@
     --box-shadow-5: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow-2);
     --box-shadow-6: rgba(0, 0, 0, 0.306) 0px 0px 8px;
     --box-shadow-7: 0 4px 8px rgba(34, 34, 34, 0.7);
+    --box-shadow-8: 0 3px 8px 8px rgba(66, 68, 90, .28);
     --tw-shadow-1: 0px 3px 6px #00000029; 
     --tw-shadow-2: 0px 0px 3px #0000001f;
     --tw-ring-offset-shadow: 0 0 #0000;
