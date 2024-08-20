@@ -1,5 +1,6 @@
 @import url('header.css');
 @import url('search.css');
+@import url('vacancy.css');
 
 .vacancies {
     background-color: var(--light-grey-1);
@@ -25,4 +26,168 @@
 
 .vacancies__advertisments {
     grid-column: span 3 / span 3;
+}
+
+.filters {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow-4);
+}
+
+.filters__block:nth-child(n + 1) {
+    border-top: solid 1px var(--light-grey-1);
+}
+
+.filters__block {
+    padding: 16px;
+    padding-bottom: 24px;
+}
+
+.filters__block__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--light-black);
+    margin-bottom: 16px;
+}
+
+.filters__block__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.filters__block__content .checkbox {
+    font-size: 14px;
+}
+
+.main__filters {
+    height: fit-content;
+}
+
+.advertisments__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.advertisment {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow-4);
+    border-radius: 8px;
+}
+
+.advertisment > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.advertisment__heard {
+    padding: 12px 24px;
+}
+
+.advertisment__heard h2 {
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--light-black);
+}
+
+.advertisment__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--light-black);
+    font-size: 14px;
+}
+
+.advertisment__info__company {
+    margin-right: 2rem;
+    font-weight: 500;
+}
+
+.advertisment__location {
+    padding: 16px 24px;
+    border-top: solid 1px var(--light-grey-1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.advertisment__location__county {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.advertisment__location__county__flag {
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    box-shadow: var(--box-shadow-6);
+}
+
+.advertisment__location__county__flag img {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.advertisment__location__county__name {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--light-black);
+}
+
+.advertinsments__salary {
+    color: var(--dark-blue-1);
+    text-align: right;
+    font-weight: 700;
+}
+
+.advertinsments__salary__date {
+    font-size: 12px;
+}
+
+.advertinsments__salary__sum {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.advertisment__bottom {
+    padding: 24px;
+    padding-bottom: 20px;
+    border-top: solid 1px var(--light-grey-1);
+}
+
+.advertisment__bottom .vacancy__requirements-wrapper {
+    padding: 0;
+}
+
+.advertisments__pagination {
+    padding: 24px 0;
+}
+
+@media (max-width: 1280px) {
+    .advertisment__heard h2 {
+        font-size: 20px;
+    }
+
+    .filters__block__title {
+        font-size: 18px;
+    }
+
+    .filters__block__content .checkbox {
+        font-size: 12px;
+    }
 }

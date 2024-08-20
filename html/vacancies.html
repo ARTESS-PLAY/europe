@@ -42,6 +42,7 @@
                 </form>
             </div>
         </div>
+
         <main class="vacancies">
             <div class="container">
                 <p class="vacancies__text text--grey">
@@ -49,85 +50,344 @@
                 </p>
                 <div class="vacancies__content">
                     <div class="filters main__filters">
-                        <p>Фильтр</p>
-                        <button>Без знания иностранного языка</button>
-                        <button>Без опыта</button>
-                        <button>Без CV</button>
-                        <button>Проживание предоставляется</button>
-                        <button>Предоставляемый транспорт</button>
-                        <button>Работа для пар</button>
+                        <div class="filters__block">
+                            <h3 class="filters__block__title">Фильтр</h3>
+                            <div class="filters__block__content">
+                                <label for="name1" class="checkbox">
+                                    <input type="checkbox" name="name" id="name1" value="1" />
+                                    <div class="checkmark"></div>
+                                    <p>Name 1</p>
+                                </label>
+                                <label for="name2" class="checkbox">
+                                    <input type="checkbox" name="name" id="name2" value="2" />
+                                    <div class="checkmark"></div>
+                                    <p>Name 2</p>
+                                </label>
+                                <label for="name3" class="checkbox">
+                                    <input type="checkbox" name="name" id="name3" value="3" />
+                                    <div class="checkmark"></div>
+                                    <p>Name 3</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filters__block">
+                            <h3 class="filters__block__title">sname</h3>
+                            <div class="filters__block__content">
+                                <label for="sname1" class="checkbox">
+                                    <input type="checkbox" name="sname" id="sname1" value="1" />
+                                    <div class="checkmark"></div>
+                                    <p>Name 1</p>
+                                </label>
+                                <label for="sname2" class="checkbox">
+                                    <input type="checkbox" name="sname" id="sname2" value="2" />
+                                    <div class="checkmark"></div>
+                                    <p>Name 2</p>
+                                </label>
+                                <label for="sname3" class="checkbox">
+                                    <input type="checkbox" name="sname" id="sname3" value="3" />
+                                    <div class="checkmark"></div>
+                                    <p>Name 3</p>
+                                </label>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="advertisments vacancies__advertisments">
-                        <div class="advertisment">
-                            <div class="advertisment__heard">
-                                <p>Доставщик посылок в DPD Delivery Service Partner</p>
-                                <div class="info advertisment__info">
-                                    <span>Easway GmbH</span>
-                                    <span>28 июль. 2024 г.</span>
-                                </div>
-                            </div>
-                            <div class="advertisment__location">
-                                <div class="from advertisment__from">
-                                    <img
-                                        class="img advertinsments__img"
-                                        src="../img/flag.svg"
-                                        alt=""
-                                    />
-                                    <span>Германия, Cloppenburg</span>
-                                </div>
-                                <div class="salary advertinsments__salary">
-                                    <span class="sum">2.100.00 EUR</span>
-                                    <span class="term">netto / месяц</span>
-                                </div>
-                            </div>
-                            <div class="advertisment__bottom">
-                                <div class="features">
-                                    <div class="features__top">
-                                        <div class="feature--item">
-                                            <img
-                                                src="../img/1.svg"
-                                                alt="Без знания языка"
-                                                class="icon"
-                                            />
-                                            <span>Без знания иностранного языка</span>
-                                        </div>
-                                        <div class="feature--item">
-                                            <img src="../img/2.svg" alt="Без опыта" class="icon" />
-                                            <span>Без опыта</span>
-                                        </div>
-                                        <div class="feature--item">
-                                            <img src="../img/3.svg" alt="Без CV" class="icon" />
-                                            <span>Без CV</span>
+                        <div class="advertisments__list">
+                            <article class="advertisment">
+                                <a href="#"
+                                    ><div class="advertisment__heard">
+                                        <h2>Доставщик посылок в DPD Delivery Service Partner</h2>
+                                        <div class="advertisment__info">
+                                            <p class="advertisment__info__company">Easway GmbH</p>
+                                            <p class="advertisment__info__date">28 июль. 2024 г.</p>
                                         </div>
                                     </div>
-                                    <div class="features__bottom">
-                                        <div class="feature--item active">
-                                            <img
-                                                src="../img/4.svg"
-                                                alt="Работа для пар"
-                                                class="icon"
-                                            />
-                                            <span>Работа для пар</span>
+                                    <div class="advertisment__location">
+                                        <div class="advertisment__location__county">
+                                            <div class="advertisment__location__county__flag">
+                                                <img src="../img/flags/pl.svg" />
+                                            </div>
+                                            <p class="advertisment__location__county__name">
+                                                <span>Германия</span>, <span>Cloppenburg</span>
+                                            </p>
                                         </div>
-                                        <div class="feature--item active">
-                                            <img
-                                                src="../img/5.svg"
-                                                alt="Проживание предоставляется"
-                                                class="icon"
-                                            />
-                                            <span>Проживание предоставляется</span>
-                                        </div>
-                                        <div class="feature--item">
-                                            <img
-                                                src="../img/6.svg"
-                                                alt="Без транспорта"
-                                                class="icon"
-                                            />
-                                            <span>Без транспорта</span>
+                                        <div class="advertinsments__salary">
+                                            <p class="advertinsments__salary__sum">2.100.00 EUR</p>
+                                            <p class="advertinsments__salary__date">
+                                                netto / месяц
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                    <div class="advertisment__bottom vacancy__requirements">
+                                        <div class="vacancy__requirements-wrapper">
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image orange-bg">
+                                                    <img src="../img/requirements/1.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text">
+                                                    Со знанием иностранного языка
+                                                </div>
+                                                <div class="vacancy__requirement-tooltip">
+                                                    <div class="tooltip-content">
+                                                        <span class="tooltip-text"
+                                                            >Язык:
+                                                            <span class="text-bold"
+                                                                >Английский</span
+                                                            ></span
+                                                        >
+                                                        <span class="tooltip-text"
+                                                            >Уровень:
+                                                            <span class="text-bold"
+                                                                >Коммуникативный</span
+                                                            ></span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image orange-bg">
+                                                    <img src="../img/requirements/2.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text">
+                                                    Мин. лет опыта: 3
+                                                </div>
+                                            </div>
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image orange-bg">
+                                                    <img src="../img/requirements/3.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text">
+                                                    Требуется CV
+                                                </div>
+                                            </div>
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image grey-bg">
+                                                    <img src="../img/requirements/4.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text grey-text">
+                                                    Работа для пар
+                                                </div>
+                                            </div>
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image green-bg">
+                                                    <img src="../img/requirements/5.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text">
+                                                    Проживание предоставляется
+                                                </div>
+                                            </div>
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image green-bg">
+                                                    <img src="../img/requirements/6.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text">
+                                                    Предоставляемый транспорт
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div></a
+                                >
+                            </article>
+                            <article class="advertisment">
+                                <a href="#"
+                                    ><div class="advertisment__heard">
+                                        <h2>Доставщик посылок в DPD Delivery Service Partner</h2>
+                                        <div class="advertisment__info">
+                                            <p class="advertisment__info__company">Easway GmbH</p>
+                                            <p class="advertisment__info__date">28 июль. 2024 г.</p>
+                                        </div>
+                                    </div>
+                                    <div class="advertisment__location">
+                                        <div class="advertisment__location__county">
+                                            <div class="advertisment__location__county__flag">
+                                                <img src="../img/flags/pl.svg" />
+                                            </div>
+                                            <p class="advertisment__location__county__name">
+                                                <span>Германия</span>, <span>Cloppenburg</span>
+                                            </p>
+                                        </div>
+                                        <div class="advertinsments__salary">
+                                            <p class="advertinsments__salary__sum">2.100.00 EUR</p>
+                                            <p class="advertinsments__salary__date">
+                                                netto / месяц
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="advertisment__bottom vacancy__requirements">
+                                        <div class="vacancy__requirements-wrapper">
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image orange-bg">
+                                                    <img src="../img/requirements/1.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text">
+                                                    Со знанием иностранного языка
+                                                </div>
+                                                <div class="vacancy__requirement-tooltip">
+                                                    <div class="tooltip-content">
+                                                        <span class="tooltip-text"
+                                                            >Язык:
+                                                            <span class="text-bold"
+                                                                >Английский</span
+                                                            ></span
+                                                        >
+                                                        <span class="tooltip-text"
+                                                            >Уровень:
+                                                            <span class="text-bold"
+                                                                >Коммуникативный</span
+                                                            ></span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image orange-bg">
+                                                    <img src="../img/requirements/2.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text">
+                                                    Мин. лет опыта: 3
+                                                </div>
+                                            </div>
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image orange-bg">
+                                                    <img src="../img/requirements/3.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text">
+                                                    Требуется CV
+                                                </div>
+                                            </div>
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image grey-bg">
+                                                    <img src="../img/requirements/4.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text grey-text">
+                                                    Работа для пар
+                                                </div>
+                                            </div>
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image green-bg">
+                                                    <img src="../img/requirements/5.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text">
+                                                    Проживание предоставляется
+                                                </div>
+                                            </div>
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image green-bg">
+                                                    <img src="../img/requirements/6.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text">
+                                                    Предоставляемый транспорт
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div></a
+                                >
+                            </article>
+                            <article class="advertisment">
+                                <a href="#"
+                                    ><div class="advertisment__heard">
+                                        <h2>Доставщик посылок в DPD Delivery Service Partner</h2>
+                                        <div class="advertisment__info">
+                                            <p class="advertisment__info__company">Easway GmbH</p>
+                                            <p class="advertisment__info__date">28 июль. 2024 г.</p>
+                                        </div>
+                                    </div>
+                                    <div class="advertisment__location">
+                                        <div class="advertisment__location__county">
+                                            <div class="advertisment__location__county__flag">
+                                                <img src="../img/flags/pl.svg" />
+                                            </div>
+                                            <p class="advertisment__location__county__name">
+                                                <span>Германия</span>, <span>Cloppenburg</span>
+                                            </p>
+                                        </div>
+                                        <div class="advertinsments__salary">
+                                            <p class="advertinsments__salary__sum">2.100.00 EUR</p>
+                                            <p class="advertinsments__salary__date">
+                                                netto / месяц
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="advertisment__bottom vacancy__requirements">
+                                        <div class="vacancy__requirements-wrapper">
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image orange-bg">
+                                                    <img src="../img/requirements/1.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text">
+                                                    Со знанием иностранного языка
+                                                </div>
+                                                <div class="vacancy__requirement-tooltip">
+                                                    <div class="tooltip-content">
+                                                        <span class="tooltip-text"
+                                                            >Язык:
+                                                            <span class="text-bold"
+                                                                >Английский</span
+                                                            ></span
+                                                        >
+                                                        <span class="tooltip-text"
+                                                            >Уровень:
+                                                            <span class="text-bold"
+                                                                >Коммуникативный</span
+                                                            ></span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image orange-bg">
+                                                    <img src="../img/requirements/2.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text">
+                                                    Мин. лет опыта: 3
+                                                </div>
+                                            </div>
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image orange-bg">
+                                                    <img src="../img/requirements/3.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text">
+                                                    Требуется CV
+                                                </div>
+                                            </div>
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image grey-bg">
+                                                    <img src="../img/requirements/4.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text grey-text">
+                                                    Работа для пар
+                                                </div>
+                                            </div>
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image green-bg">
+                                                    <img src="../img/requirements/5.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text">
+                                                    Проживание предоставляется
+                                                </div>
+                                            </div>
+                                            <div class="vacancy__requirement">
+                                                <div class="vacancy__requirement-image green-bg">
+                                                    <img src="../img/requirements/6.svg" />
+                                                </div>
+                                                <div class="vacancy__requirement-text">
+                                                    Предоставляемый транспорт
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div></a
+                                >
+                            </article>
+                        </div>
+
+                        <div class="advertisments__pagination pagination">
+                            <div class="pagination__el pagination__el--prev"></div>
+                            <div class="pagination__el pagination__el--current">1</div>
+                            <div class="pagination__el">2</div>
+                            <div class="pagination__el pagination__el--dots">...</div>
+                            <div class="pagination__el">3</div>
+                            <div class="pagination__el pagination__el--next"></div>
                         </div>
                     </div>
                 </div>

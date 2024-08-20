@@ -67,3 +67,9 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+@media (max-width: 1280px) {
+    .search h1 {
+        font-size: 20px;
+    }
+}
