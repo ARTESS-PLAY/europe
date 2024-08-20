@@ -1,6 +1,7 @@
 @import url('palette.css');
 @import url('container.css');
-@import url('../Fonts/index.css');
+@import url('ui.css');
+@import url('../fonts/index.css');
 
 * {
     padding: 0;
@@ -89,4 +90,8 @@ h5,
 h6 {
     font-style: inherit;
     font-weight: 400;
+}
+
+.no-scroll {
+    overflow: hidden;
 }

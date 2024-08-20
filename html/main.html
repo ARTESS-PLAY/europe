@@ -14,7 +14,10 @@
         <div class="container">
             <div class="header">
                 <div class="img header__img">
-                    <a class=header__link href="main.html"><img src="../img/logo-full.svg" alt="Logo"></a>
+                    <a class="header__link" href="main.html">
+                        <img src="../img/logo-full.svg" alt="Logo" class="logo-desk" />
+                        <img src="../img/flag.svg" alt="Logo" class="logo-mob" />
+                    </a>
                 </div>
                 <nav class="navigation header__navigation">
                     <a href="vacancies.html" class="link link--black">Вакансии</a>
@@ -22,6 +25,12 @@
                     <a href="#" class="link link--blue">Работодатели</a>
                     <a href="#" class="link link--blue">Для компаний</a>
                 </nav>
+
+                <div class="burger_menu" id="open_mob_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </header>
@@ -393,7 +402,7 @@
                     <div class="footer__circle"></div>
                 </div>
                 <a class="footer__link" href="#">О нас</a>
-                <a class="footer__link" href="#">Контакт</a>
+                <a class="footer__link" href="contacts.html">Контакт</a>
             </div>
             <div class="footer__grid">
                 <div class="footer__title">
@@ -439,6 +448,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../js/mainPage.js"></script>
     <script src="../js/main.js"></script>
 </body>
 

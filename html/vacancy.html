@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/vacancy.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/vacancy.css" />
     <title>Europa Jobs</title>
 </head>
 
@@ -13,7 +13,10 @@
         <div class="container">
             <div class="header">
                 <div class="img header__img">
-                    <a class=header__link href="main.html"><img src="../img/logo-full.svg" alt="Logo" /></a>
+                    <a class="header__link" href="main.html">
+                        <img src="../img/logo-full.svg" alt="Logo" class="logo-desk" />
+                        <img src="../img/flag.svg" alt="Logo" class="logo-mob" />
+                    </a>
                 </div>
                 <nav class="navigation header__navigation">
                     <a href="vacancies.html" class="link link--black">Вакансии</a>
@@ -21,6 +24,12 @@
                     <a href="#" class="link link--blue">Работодатели</a>
                     <a href="#" class="link link--blue">Для компаний</a>
                 </nav>
+
+                <div class="burger_menu" id="open_mob_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </header>
@@ -32,11 +41,13 @@
                 <div class="vacancy">
                     <div class="vacancy__card card">
                         <div class="vacancy__info">
-                            <p class="vacancy__title">Сварщик MIG-MAG 135 €18 нетто/ч В НИДЕРЛАНДАХ </p>
-                            <p class="vacancy__payment">
-                                <span class="vacancy__price">18.00 EUR</span>
-                                <span class="vacancy__rate">netto / час</span>
-                            </p>
+                            <div class="vacancy__title">
+                                Сварщик MIG-MAG 135 €18 нетто/ч В НИДЕРЛАНДАХ
+                            </div>
+                            <div class="vacancy__payment">
+                                <div class="vacancy__price">18.00 EUR</div>
+                                <div class="vacancy__rate">netto / час</div>
+                            </div>
                         </div>
                         <div class="vacancy__open">
                             <div class="vacancy__conditions">
@@ -73,8 +84,9 @@
                                     <span class="vacancy__condition-note">23 авг. 2024 г.</span>
                                 </p>
                             </div>
-                            <div class="vacancy__image"
-                                style="background-image: url('../img/b1e95fe74f536b55d88c08a282ec7b5c.jpg');"></div>
+                            <div class="vacancy__image" style="
+                                        background-image: url('../img/b1e95fe74f536b55d88c08a282ec7b5c.jpg');
+                                    "></div>
                         </div>
                     </div>
                     <div class="vacancy__requirements card">
@@ -83,13 +95,18 @@
                                 <div class="vacancy__requirement-image orange-bg">
                                     <img src="../img/requirements/1.svg" />
                                 </div>
-                                <p class="vacancy__requirement-text">Со знанием иностранного языка</p>
+                                <p class="vacancy__requirement-text">
+                                    Со знанием иностранного языка
+                                </p>
                                 <div class="vacancy__requirement-tooltip">
                                     <div class="tooltip-content">
-                                        <p class="tooltip-text">Язык: <span
-                                                class="text-bold">Английский</span></p>
-                                        <p class="tooltip-text">Уровень: <span
-                                                class="text-bold">Коммуникативный</span></p>
+                                        <p class="tooltip-text">
+                                            Язык: <span class="text-bold">Английский</span>
+                                        </p>
+                                        <p class="tooltip-text">
+                                            Уровень:
+                                            <span class="text-bold">Коммуникативный</span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -109,19 +126,25 @@
                                 <div class="vacancy__requirement-image grey-bg">
                                     <img src="../img/requirements/4.svg" />
                                 </div>
-                                <p class="vacancy__requirement-text grey-text">Работа для пар</p>
+                                <p class="vacancy__requirement-text grey-text">
+                                    Работа для пар
+                                </p>
                             </div>
                             <div class="vacancy__requirement">
                                 <div class="vacancy__requirement-image green-bg">
                                     <img src="../img/requirements/5.svg" />
                                 </div>
-                                <p class="vacancy__requirement-text">Проживание предоставляется</p>
+                                <p class="vacancy__requirement-text">
+                                    Проживание предоставляется
+                                </p>
                             </div>
                             <div class="vacancy__requirement">
                                 <div class="vacancy__requirement-image green-bg">
                                     <img src="../img/requirements/6.svg" />
                                 </div>
-                                <p class="vacancy__requirement-text">Предоставляемый транспорт</p>
+                                <p class="vacancy__requirement-text">
+                                    Предоставляемый транспорт
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -130,7 +153,8 @@
                         <p class="vacancy__description-text">
                             ТЕПЕРЬ РАБОТАЮ В НИДЕРЛАНДАХ.
 
-                            Голландская компания JOB SPECTRUM ищет квалифицированных работников для промышленно-металлургического сектора.
+                            Голландская компания JOB SPECTRUM ищет квалифицированных работников для
+                            промышленно-металлургического сектора.
 
                             Мы постоянно набираем сотрудников для:
                             Сварщик MIG-MAG 135 СЕЙЧАС НА ГОЛЛАНДИИ €18/ч, от €720 до €900 нетто/неделя.
@@ -174,12 +198,14 @@
                 <div class="application-wrapper">
                     <div class="application">
                         <p class="application__title">Подавайте заявку сейчас</p>
-                        <div><a class="application__link" href="#">
-                            <button class="application__btn">
-                                <img class="application__btn-img" src="../img/arrow.svg" />
-                                <span class="application__btn-text">Отправить заявку</span>
-                            </button>
-                        </a></div>
+                        <div>
+                            <a class="application__link" href="#">
+                                <button class="application__btn">
+                                    <img class="application__btn-img" src="../img/arrow.svg" />
+                                    <span class="application__btn-text">Отправить заявку</span>
+                                </button>
+                            </a>
+                        </div>
                         <button class="application__offer-btn">Напечатать предложение</button>
                     </div>
                 </div>
@@ -194,6 +220,15 @@
             </a>
         </div>
     </div>
+    <div class="application-btn-fixed">
+        <a class="application__link" href="#">
+            <button class="application__btn">
+                <img class="application__btn-img" src="../img/arrow.svg" />
+                <span class="application__btn-text">Отправить заявку</span>
+            </button>
+        </a>
+    </div>
+    </div>
 
     <footer class="footer-wrapper">
         <div class="footer">
@@ -203,7 +238,7 @@
                     <div class="footer__circle"></div>
                 </div>
                 <a class="footer__link" href="#">О нас</a>
-                <a class="footer__link" href="#">Контакт</a>
+                <a class="footer__link" href="contacts.html">Контакт</a>
             </div>
             <div class="footer__grid">
                 <div class="footer__title">
@@ -247,6 +282,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
