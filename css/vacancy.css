@@ -225,13 +225,70 @@ body {
                     color: var(--light-black);
                     margin-bottom: 1rem;
                 }
-                
+
                 .vacancy__description-text {
                     font-size: 1rem;
                     line-height: 1.5rem;
                     white-space: pre-line;
                     color: var(--light-black);
                 }
+            }
+        }
+
+        .application-wrapper .application {
+            display: grid;
+            padding: 1rem;
+            background-color: var(--white);
+            border-radius: .375rem;
+            margin-bottom: .75rem;
+            box-shadow: var(--box-shadow-5);
+            text-align: center;
+
+            .application__title {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-weight: 600;
+                color: var(--light-black);
+                margin-bottom: .5rem;
+            }
+
+            .application__link {
+                display: flex;
+
+                .application__btn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: var(--green-2);
+                    border: 2px solid var(--green-2);
+                    border-radius: .375rem;
+                    min-height: 3rem;
+                    padding: 0 2.25rem;
+                    box-shadow: var(--box-shadow-4);
+
+                    .application__btn-img {
+                        width: 24px;
+                        height: 24px;
+                        display: flex;
+                        justify-content: center;
+                        margin-right: .5rem;
+                    }
+
+                    .application__btn-text {
+                        color: var(--white);
+                        font-size: 1.125rem;
+                        line-height: 1.75rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .application__offer-btn {
+                margin-top: .75rem;
+                text-decoration-line: underline;
+                background-color: transparent;
+                color: var(--light-black);
+                font-weight: 500;
             }
         }
     }
@@ -254,17 +311,24 @@ body {
 }
 
 @media (max-width: 1279.89px) {
-    .wrapper .wrapper-grid .vacancy {
-        .vacancy__card {
-            .vacancy__info {
-                .vacancy__title {
-                    font-size: 1.125rem;
+    .wrapper .wrapper-grid {
+        .vacancy {
+            .vacancy__card {
+                .vacancy__info {
+                    .vacancy__title {
+                        font-size: 1.125rem;
+                    }
                 }
+            }
+
+            .vacancy__description .vacancy__description-title {
+                font-size: 1.125rem;
             }
         }
 
-        .vacancy__description .vacancy__description-title {
-            font-size: 1.125rem;
+        .application-wrapper .application .application__title {
+            font-size: .875rem;
+            line-height: 1.25rem;
         }
     }
 }
@@ -292,6 +356,10 @@ body {
                         grid-template-columns: repeat(3, minmax(0, 1fr));
                     }
                 }
+            }
+
+            .application-wrapper .application {
+                display: none;
             }
         }
     }
