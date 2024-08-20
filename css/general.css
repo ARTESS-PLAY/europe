@@ -1,6 +1,6 @@
 @import url('palette.css');
 @import url('container.css');
-@import url('../Fonts/index.css');
+@import url('../fonts/index.css');
 
 * {
     padding: 0;
